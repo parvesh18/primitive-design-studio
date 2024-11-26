@@ -1,7 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { AboutCompany, Founders, Team, Studio, ContactForm } from "./about";
 
 const AboutPage = () => {
-  return <div>AboutPage</div>;
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  return (
+    <div className="mt-28">
+      <AboutCompany />
+      <Founders />
+      <Team />
+      <Studio />
+      <ContactForm />
+    </div>
+  );
 };
 
 export default AboutPage;
